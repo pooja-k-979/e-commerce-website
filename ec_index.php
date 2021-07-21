@@ -29,8 +29,22 @@ and open the template in the editor.
                 <div class="collapse navbar-collapse" id="myNavbar">
                 <div>
                          <ul class="nav navbar-nav navbar-right">
-                         <li><a href="sign_up.html" target="_blank"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
-                         <li><a href="sign_in.html" target="_blank"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                             <li><a href="ec_signup.php" target="_blank"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
+                         <li>
+                             
+                             <div class="wrapper">
+                                 <a href="#modalbox" ><span class="glyphicon glyphicon-log-in"></span> Login</a>   
+                             </div>
+                             
+                             <div id="modalbox" class="modal">
+                                <div class="modalcontent">
+                                    <h1>CSS only modal</h1>
+                                    <p>I need to learn javascript</p>
+                                    <a href="#" class="modalclose">&times;</a>
+                                </div>
+                            </div>
+                             
+                         </li>
                          <li><a href="#"><span class="glyphicon glyphicon-th-list"></span> About us</a></li>
                          <li><a href="#"><span class=" glyphicon glyphicon-earphone"></span> Contact us</a></li>
                          </ul>
@@ -201,5 +215,9 @@ Colour:Mint Green</p>
                
            </div>
        </div>
+       
+      
+       
+       
     </body>
 </html>

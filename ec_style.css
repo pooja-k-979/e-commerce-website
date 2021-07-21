@@ -91,7 +91,7 @@ div.row {
 
 .bubbles img{
     width: 50px;
-    animation: bubble 7s linear infinite;
+    animation: bubble 7s ease infinite;
 }
 .bubbles{
     width: 100%;
@@ -129,23 +129,23 @@ div.row {
     width: 80px;
 }
 .bubbles img:nth-child(3){
-    animation-delay: 4s;
+    animation-delay: 7s;
     width: 70px;
 }
 .bubbles img:nth-child(4){
     animation-delay: 3s;
-    width: 40px;
+    width: 60px;
 }
 .bubbles img:nth-child(5){
-    animation-delay: 4.5s;
+    animation-delay: 2s;
      width: 80px;
 }
 .bubbles img:nth-child(6){
-    animation-delay: 7s;
+    animation-delay: 4s;
     width: 40px;
 }
 .bubbles img:nth-child(7){
-    animation-delay: 3s;
+    animation-delay: 6s;
     width: 37px;
 }
 .bubbles img:nth-child(8){
@@ -159,4 +159,55 @@ div.row {
 .bubbles img:nth-child(10){
     animation-delay: 2s;
     width: 50px;
+}
+
+/*WRAPPER*/
+.wrapper{
+    background-color: #204d74;
+    height: 100vh;
+    display: flex;
+    
+}
+
+/*MODAL BOX*/
+.modal{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77,77,77,0.7);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*visible modal on click*/
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent{
+    position: relative;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 4px;
+}
+.modalcontent a{
+    font-size: 21px;
+    font-weight: 600;
+}
+.modalclose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
 }
