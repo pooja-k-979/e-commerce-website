@@ -20,7 +20,7 @@ and open the template in the editor.
     <body>
 <!--       navbar
        
--->        <nav class="nav navbar navbar-inverse index_back">
+-->        <nav class="nav navbar navbar-inverse ">
             <div class="container nav_container">
                 <div class="navbar-header ">
                        <a href="#" class="navbar-brand">E-Store</a>
@@ -29,32 +29,19 @@ and open the template in the editor.
                 <div class="collapse navbar-collapse" id="myNavbar">
                 <div>
                          <ul class="nav navbar-nav navbar-right">
-                             <li><a href="ec_signup.php" target="_blank"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
-                         <li>
-                             
-                             <div class="wrapper">
-                                 <a href="#modalbox" ><span class="glyphicon glyphicon-log-in"></span> Login</a>   
-                             </div>
-                             
-                             <div id="modalbox" class="modal">
-                                <div class="modalcontent">
-                                    <h1>CSS only modal</h1>
-                                    <p>I need to learn javascript</p>
-                                    <a href="#" class="modalclose">&times;</a>
-                                </div>
-                            </div>
-                             
-                         </li>
-                         <li><a href="#"><span class="glyphicon glyphicon-th-list"></span> About us</a></li>
-                         <li><a href="#"><span class=" glyphicon glyphicon-earphone"></span> Contact us</a></li>
+                            <li><a href="ec_signup.php" target="_blank"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
+                            <li><a href="#modalbox" ><span class="glyphicon glyphicon-log-in"></span> Login</a> </li>
+                            <li><a href="#"><span class="glyphicon glyphicon-th-list"></span> About us</a></li>
+                            <li><a href="#"><span class=" glyphicon glyphicon-earphone"></span> Contact us</a></li>
                          </ul>
                              
                 </div>
             </div>
          </nav>
+
       <!--body--mobile purchasing-->
       
-      <div class=" index_back">
+      <div class="index_back">
          
           <div class="container ">
            <!--1st row-->
@@ -217,7 +204,44 @@ Colour:Mint Green</p>
        </div>
        
       
-       
+    
+                            <div id="modalbox" class="modal">
+                                <div class="modalcontent">
+                                
+                                    <h4>Don't have an account?<a href="ec_signup.php">Sign up</a></h4>
+                                    <br>
+                                <form id="Register_modal" method="post" action="user_registration_script.php">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="email" placeholder="Email" >
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" name="password" placeholder="Password" >
+                                    </div>
+                                
+                                     <div class="row">
+                                         <div class="col-lg-4">
+                                             
+                                         </div>
+                                         <div class="col-lg-4">
+                                             <button <input type="submit" class="btn btn-primary btn-block">Continue</button>
+                                         </div>
+                                         <div class="col-lg-4">
+                                             <div class="callout" data-closable>
+                                                <button class="close-button modalclose" aria-label="Close alert" type="button" data-close>
+                                                    <a href="#" class="modalclose">Close</a>
+                                                </button>
+                                             <!--<a href="#" class="modalclose">Close</a>-->
+                                             <!--<button <input type="close" class="btn btn-primary btn-block ">Close</button>-->
+                                             </div>
+                                         </div>
+                                     </div>
+                                 
+                                 </form>
+                                    
+                                    
+                                    <a href="#" class="modalclose">&times;</a>
+                                </div>
+                            </div>   
        
     </body>
 </html>

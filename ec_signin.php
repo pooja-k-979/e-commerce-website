@@ -11,7 +11,8 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="modal_container" id="modal_container">
+        
+<!--        <div class="modal_container" id="modal_container">
                              <div class="modal">
                                 <form id="Login_modal">
                                  <h4>Don't have an account?</h4>
@@ -25,6 +26,6 @@ and open the template in the editor.
                                  <button <input type="submit" class="btn btn-danger btn-block">Continue</button>
                                 </form>
                             </div> 
-                         </div>
+                         </div>-->
     </body>
 </html>
