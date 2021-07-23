@@ -87,7 +87,7 @@
                                      </div>
                                  
                                  </form>
-                                <a href="#" class="modalclose">&times;</a>
+                               
                             </div>    
         </div>
     </div>
