@@ -80,7 +80,7 @@ and open the template in the editor.
         
         <div class="hero">
              
-               <div class="modal-container"  id="modal_container">
+               <div class="modal-container"  id="signup_container">
                        
                              <div id="modal" >
                                  <form id="Register_modal" method="post" action="user_registration_script.php">

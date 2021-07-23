@@ -18,10 +18,10 @@ and open the template in the editor.
         
     </head>
     <body>
-<!--       navbar
-       
--->        <nav class="nav navbar navbar-inverse ">
-            <div class="container nav_container">
+     <!--navbar-->
+     <div class="container-fluid">
+        <nav class="nav navbar navbar-inverse ">
+            <div class="container-fluid nav_container">
                 <div class="navbar-header ">
                        <a href="#" class="navbar-brand">E-Store</a>
                 </div>
@@ -37,9 +37,10 @@ and open the template in the editor.
                              
                 </div>
             </div>
-         </nav>
-
-      <!--body--mobile purchasing-->
+         </nav> 
+     </div>
+      
+      <!--body-mobile purchasing-->
       
       <div class="index_back">
          
@@ -61,6 +62,8 @@ Colour:Mint Green</p>
                        </div>
                    </div>
                </div>
+               
+              
                <!--2nd mobile-->
                <div class="col-xs-4">
                   <div class="panel panel-default">
@@ -76,6 +79,8 @@ Colour:Mint Green</p>
                        </div>
                    </div>  
                </div>
+               
+               
                <!--3rd element-->
                <div class="col-xs-4">
                   <div class="panel panel-default">
@@ -126,6 +131,7 @@ Colour:Mint Green</p>
                        </div>
                    </div>  
                </div>
+               
                <!--3rd element-->
                <div class="col-xs-4">
                   <div class="panel panel-default">
@@ -149,7 +155,7 @@ Colour:Mint Green</p>
        </div>
       
        <!--footer-->
-       <div class="footer footer_style">
+      <div class="footer footer_style">
            <div class="row ">
                
                <div class="col-xs-4 ">
@@ -203,42 +209,39 @@ Colour:Mint Green</p>
            </div>
        </div>
        
-      
+                             <!--for sign in modal-->
     
                             <div id="modalbox" class="modal">
                                 <div class="modalcontent">
                                 
-                                    <h4>Don't have an account?<a href="ec_signup.php">Sign up</a></h4>
+                                    <h4>Don't have an account? <a href="ec_signup.php">Sign up</a></h4>
                                     <br>
                                 <form id="Register_modal" method="post" action="user_registration_script.php">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="email" placeholder="Email" >
+                                        <input type="email" class="form-control" name="email" placeholder="Email" >
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control" name="password" placeholder="Password" >
                                     </div>
-                                
-                                     <div class="row">
+                                    
+                                    <div class="row">
                                          <div class="col-lg-4">
                                              
                                          </div>
                                          <div class="col-lg-4">
                                              <button <input type="submit" class="btn btn-primary btn-block">Continue</button>
                                          </div>
-                                         <div class="col-lg-4">
+<!--                                         <div class="col-lg-4">
                                              <div class="callout" data-closable>
                                                 <button class="close-button modalclose" aria-label="Close alert" type="button" data-close>
                                                     <a href="#" class="modalclose">Close</a>
                                                 </button>
-                                             <!--<a href="#" class="modalclose">Close</a>-->
-                                             <!--<button <input type="close" class="btn btn-primary btn-block ">Close</button>-->
-                                             </div>
-                                         </div>
+                                              </div>
+                                            <label for="click" class="close-btn">Close</label>
+                                         </div>-->
                                      </div>
                                  
                                  </form>
-                                    
-                                    
                                     <a href="#" class="modalclose">&times;</a>
                                 </div>
                             </div>   
