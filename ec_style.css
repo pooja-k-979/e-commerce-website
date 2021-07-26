@@ -239,8 +239,22 @@ div.row {
     color: white;
     transition: .5s;
 }
-.contact_heading h3{
-    color: #cccccc;
+.contact_heading {
+    color: #080808;
+}
+#issue_box_size{
+    height: 400px;
+    font-size: 14pt;
+}
+.form-text{
+    padding:15px 0;
+}
+.contact_pg_background_color{
+    background-color: #a6e1ec;
+    /*background:linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%);*/
+}
+.modal_header_color{
+    background-color: #419641;
 }
 
 

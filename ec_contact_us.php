@@ -1,6 +1,6 @@
  <html>
     <head>
-        <title>My first website</title>
+        <title>contact us </title>
         <!--minifies bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
         <!-- jQuery library -->
@@ -12,7 +12,9 @@
         
     </head>
     <body>
-     
+        <div class="contact_pg_background_color">
+            
+           
 <!--navbar-->
 <nav class="nav navbar navbar-inverse ">
       <div class="container-fluid nav_container">
@@ -39,7 +41,7 @@
     <!--1st row-->
     <div class="row ">
         <div class="col-xs-8 ">
-           <div class="contact_heading">
+           <div >
                <h3>Have any questions? We would love to hear from you</h3>
                <!--<h3>We would love to hear from you</h3>-->
             </div>
@@ -50,40 +52,38 @@
     <!--2nd row?-->
     <div class="row ">
         <div class="col-xs-6 ">
-                            <div id="modal">
+                            <div class="container-fluid">
                                 <h2>CONTACT US</h2>
                                  <form id="Register_modal" method="post" action="user_registration_script.php">
                                 
                                      <div class="form-group">
-                                        <!--<label for="yourname">Your name:</label>-->
-                                        <input type="text" class="form-control input-lg" name="yourname" placeholder="Name">   
+                                        <label for="yourname">Name</label>
+                                        <input type="text" class="form-control input-lg" name="Name" >   
                                      </div>
                                      <div class="form-group">
-                                        <input type="text" class="form-control" name="email" placeholder="Email" >
+                                        <label for="email">Email</label>
+                                        <input type="text" class="form-control" name="email" >
                                      </div>
-                                     <div class="form-group">
-                                        <input type="password" class="form-control" name="email" placeholder="Password" >
-                                    </div>
                                     <div class="form-group">
-                                         <input type="tel" class="form-control" name="contact" placeholder="Contact" >  
+                                         <label for="contact">Contact</label>
+                                         <input type="tel" class="form-control" name="contact">  
                                     </div>
+                                    
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="city" placeholder="City" >  
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="address" placeholder="Address" >  
+                                        <label for="issuefaced">Issue faced</label>
+                                        <input type="text" class="form-control" style="font-size:14pt;height:150px" name="issuefaced" >  
                                     </div>
                                 
                                      <div class="row">
                                          <div class="col-lg-4">
                                              
                                          </div>
-                                         <div class="col-lg-4">
-                                             <button <input type="submit" class="btn btn-primary btn-block">Continue</button>
+                                         <div class="col-lg-3">
+                                              <a href="#support_confirmation" > Submit</a> 
+                     
+                                            <!--<a href="#support_confirmation"> <button <input type="submit" class="btn btn-primary btn-block">Submit</button></a>-->
                                          </div>
-                                         <div class="col-lg-4">
-                                             <button <input type="close" class="btn btn-primary btn-block">Close</button>
-                                         </div>
+                                         
                                      </div>
                                  
                                  </form>
@@ -92,9 +92,9 @@
         </div>
     </div>
 </div>
-<br><br><br><<br>
+<br><br><br><br>
 <!--footer-->
-<div class="footer footer_style">
+<div class="footer column_style">
            <div class="row ">
                
                <div class="col-xs-4 ">
@@ -121,7 +121,7 @@
                
                <div class="col-xs-4">
                    <div class="panel panel-default column_style">
-                       <a href="ec_signin.php"><h6><h6>Login</h6></a>
+                       <a href="#modalbox"><h6>Login</h6></a>
                       
                    </div>
                </div>
@@ -183,5 +183,30 @@
                                     <a href="#" class="modalclose">&times;</a>
                                 </div>
                             </div>
+
+<!--support confirmation modal-->
+
+                            <div id="support_confirmation" class="modal">
+                                
+                                
+                                <div class="modalcontent">
+                                    <div class="modal-header modal_header_color">
+                                    <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                                    <h4 class="modal-title background-color">Confirmation</h4>
+                                </div>
+                                    <h3>A Confirmation code has been sent to your Email id. Please click on the link in the mail to confirm your Query.</h3>
+
+                                    <a href="#" class="modalclose">&times;</a>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary ">Save changes</button>
+                                        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+</div>
     </body>
 </html>

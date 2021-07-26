@@ -4,6 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+
 <html>
     <head>
         <title>My first website</title>
@@ -29,9 +30,9 @@ and open the template in the editor.
                 <div class="collapse navbar-collapse" id="myNavbar">
                 <div>
                          <ul class="nav navbar-nav navbar-right">
-                            <li><a href="ec_signup.php" target="_blank"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
-                            <li><a href="#modalbox" ><span class="glyphicon glyphicon-log-in"></span> Login</a> </li>
-                            <li><a href="#"><span class="glyphicon glyphicon-th-list"></span> About us</a></li>
+                            <li><a href="ec_cart.php" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                            <li><a href="ec_settings.php" ><span class="glyphicon glyphicon-cog"></span> Settings</a> </li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
                             <li><a href="#"><span class=" glyphicon glyphicon-earphone"></span> Contact us</a></li>
                          </ul>
                              
@@ -41,117 +42,40 @@ and open the template in the editor.
      </div>
       
      <!--body-mobile purchasing-->
-     <div class="index_back">
-         
-          <div class="container ">
-           <!--1st row-->
-           <div class="row row_style">
-               <!--1st mobile-->
-               <div class="col-xs-4">
-                   <div class="panel panel-default">
-                       <div class="panel-heading">
-                           <h4> Redmi 9 prime</h4>
-                       </div>
-                       <div class="panel-body">
-                           <img class="size" href="#" src="ecommerce images/redmi_9_prime.jpg" alt="weak internet connection">
-                           <p>--Redmi 9 Prime (Mint Green, 4GB RAM, 64GB Storage)- Full HD+ Display & AI Quad Camera
-Style name:4GB RAM 64GB Storage
-Colour:Mint Green</p> 
-                           <button class="btn btn-primary btn_size">Order now</button>
-                       </div>
-                   </div>
-               </div>
-               
-              
-               <!--2nd mobile-->
-               <div class="col-xs-4">
-                  <div class="panel panel-default">
-                       <div class="panel-heading">
-                           <h4> Redmi 9 prime</h4>
-                       </div>
-                       <div class="panel-body">
-                           <img class="size" href="#" src="ecommerce images/redmi_9_prime.jpg" alt="weak internet connection">
-                           <p>--Redmi 9 Prime (Mint Green, 4GB RAM, 64GB Storage)- Full HD+ Display & AI Quad Camera
-Style name:4GB RAM 64GB Storage
-Colour:Mint Green</p> 
-                           <button class="btn btn-primary btn_size btn_size">Order now</button>
-                       </div>
-                   </div>  
-               </div>
-               
-               
-               <!--3rd element-->
-               <div class="col-xs-4">
-                  <div class="panel panel-default">
-                       <div class="panel-heading">
-                           <h4> Redmi 9 prime</h4>
-                       </div>
-                       <div class="panel-body">
-                           <img class="size" href="#" src="ecommerce images/redmi_9_prime.jpg" alt="weak internet connection">
-                           <p>--Redmi 9 Prime (Mint Green, 4GB RAM, 64GB Storage)- Full HD+ Display & AI Quad Camera
-Style name:4GB RAM 64GB Storage
-Colour:Mint Green</p> 
-                           <button class="btn btn-primary btn_size">Order now</button>
-                       </div>
-                   </div>  
-               </div>
-              
-               
-           </div>
-           <!--2nd row-->
-           <div class="row row_style">
-               <!--1st mobile-->
-               <div class="col-xs-4">
-                  <div class="panel panel-default">
-                       <div class="panel-heading">
-                           <h4> Redmi 9 prime</h4>
-                       </div>
-                       <div class="panel-body">
-                           <img class="size" href="#" src="ecommerce images/redmi_9_prime.jpg" alt="weak internet connection">
-                           <p>--Redmi 9 Prime (Mint Green, 4GB RAM, 64GB Storage)- Full HD+ Display & AI Quad Camera
-Style name:4GB RAM 64GB Storage
-Colour:Mint Green</p> 
-                           <button class="btn btn-primary btn_size">Order now</button>
-                       </div>
-                   </div>  
-               </div>
-               <!--2nd mobile-->
-               <div class="col-xs-4">
-                  <div class="panel panel-default">
-                       <div class="panel-heading">
-                           <h4> Redmi 9 prime</h4>
-                       </div>
-                       <div class="panel-body">
-                           <img class="size" href="#" src="ecommerce images/redmi_9_prime.jpg" alt="weak internet connection">
-                           <p>--Redmi 9 Prime (Mint Green, 4GB RAM, 64GB Storage)- Full HD+ Display & AI Quad Camera
-Style name:4GB RAM 64GB Storage
-Colour:Mint Green</p> 
-                           <button class="btn btn-primary btn_size">Order now</button>
-                       </div>
-                   </div>  
-               </div>
-               
-               <!--3rd element-->
-               <div class="col-xs-4">
-                  <div class="panel panel-default">
-                       <div class="panel-heading">
-                           <h4> Redmi 9 prime</h4>
-                       </div>
-                       <div class="panel-body">
-                           <img class="size" href="#" src="ecommerce images/redmi_9_prime.jpg" alt="weak internet connection">
-                           <p>--Redmi 9 Prime (Mint Green, 4GB RAM, 64GB Storage)- Full HD+ Display & AI Quad Camera
-Style name:4GB RAM 64GB Storage
-Colour:Mint Green</p> 
-                           <button class="btn btn-primary btn_size">Order now</button>
-                       </div>
-                   </div>  
-               </div>
-               <br><br>
-           </div>
+     <div class="container">
+         <div class="row row_style">
+             <div class="col-lg-4">
+                                   
+             </div>
+             
+             <div class="col-lg-4">
+                 
+                    <form id="Register_modal" method="post" action="user_registration_script.php">
+                        <h4>Change Password</h4>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Email" >
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" placeholder="Password" >
+                        </div>
+
+                        <div class="row">
+                             <div class="col-lg-4">
+
+                             </div>
+                             <div class="col-lg-4">
+                                 <button <input type="submit" class="btn btn-primary btn-block">Continue</button>
+                             </div>
+
+                         </div>
+                    </form>
+                                  
+             </div>
+             
+         </div>
+    </div>
+        
            
-       </div>
-          
-       </div>
       
      <!--footer-->
      <div class="footer footer_style">
